@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>17</y>
+     <width>1261</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QTableWidget" name="trgStdTable">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>110</y>
+       <width>620</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>한글명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>영문약어</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>데이터타입</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>소수점길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>설명</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>160</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;*기준 데이터 표준&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>80</y>
+       <width>160</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;*상위 데이터 표준&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="cmmnStdTable">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>110</y>
+       <width>620</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>공통표준용어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>공통표준용어영문약어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>공통표준도메인명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>데이터타입</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>소수점길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>공통표준용어설명</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnTrgStdFileOpen">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>80</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>열기</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txTrgStdFileNm">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>330</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txCmmnStdFileNm">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>80</y>
+       <width>330</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCmmnStdFileOpen">
+     <property name="geometry">
+      <rect>
+       <x>1180</x>
+       <y>80</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>열기</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;*파일 선택하기&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCompare">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>50</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>두 데이터 표준비교</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>40</y>
+       <width>581</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;*엑셀양식디렉토리(excel_template)의 엑셀양식을 참조하세요&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>471</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;*데이터 표준 배교 맵핑&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnIntegration">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>50</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>데이터 표준 통합</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMakeFile">
+     <property name="geometry">
+      <rect>
+       <x>990</x>
+       <y>50</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>비교 맵핑 파일생성</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="compareTable">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>1261</width>
+       <height>661</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>한글명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>영문약어</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>데이터타입</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>소수점길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>설명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>공통표준용어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>공통표준용어영문약어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>데이터타입</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>소수점길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>표준적용여부</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnGoPage1">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>20</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>이전</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>471</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;*데이터 파일 통합&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMakeIntegratedFile">
+     <property name="geometry">
+      <rect>
+       <x>1080</x>
+       <y>50</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>데이터 표준 통합 파일 생성</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="integratedTable">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>1261</width>
+       <height>661</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>구분</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>표준용어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>영문약어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>도메인명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>데이터유형</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>소수점길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>표준여부</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>표준용어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>표준약어명</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>데이터유형</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>소수점길이</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>비고</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnGoPage2">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>20</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>이전</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>471</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;공공데이터 공통표준용어 통합 지원도구 v1.0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>test()</slot>
+ </slots>
+</ui>
